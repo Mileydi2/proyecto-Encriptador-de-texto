@@ -8,16 +8,18 @@
 
 html,body{
     height: 100%;
+    box-sizing: border-box;
+    background-color: rgb(235, 241, 244);
 }
 
 .main{
     display: flex;
     height: 100%;
-    background-color: rgb(235, 241, 244);
+    box-sizing: border-box
 }
 
 .main__intro__datos__logo{
-    width: 120;
+    width: 50px;
     height: 48px;
     margin: 40px 0px 0px 40px;
 }
@@ -27,15 +29,11 @@ html,body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 168px 0px 72px 240px; 
-}
-
-.main__intro__datos__container__input{
-
+    margin: 168px 40px 72px 80px; 
 }
 
 .main__intro__datos__input{
-    width: 577px;
+    width: 90%;
     height: 48px;
     font-size: 2rem; 
     border: none;
@@ -46,6 +44,11 @@ html,body{
 .main__intro__datos__contenedor__icono__button{
     display: flex;
     flex-direction: column;
+    gap: 8px;
+}
+
+.main__intro__datos__contenedor__button{
+    display: flex;
     gap: 8px;
 }
 
@@ -71,9 +74,9 @@ html,body{
 .main__mostrar__datos{
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 30%;
     background-color: white;
-    margin: 40px;
+    margin: 40px 40px 40px 0px;
     border-radius: 32px;
     align-items: center;
     justify-content: center;
@@ -97,3 +100,76 @@ html,body{
 .main__mostrar__datos__parrafo{
     text-align: center; 
 }
+/* _____________________________________________ */
+/* *****RESPONSIVIDAD PARA TABLETS******* */
+/* ____________________________________________ */
+
+@MEDIA (max-width: 768px){
+    
+    .main{
+        flex-direction: column;
+    }
+
+    .main__intro__datos{
+        margin: 40px;
+        min-height: 582px;
+        width: auto;
+    }
+
+    .main__intro__datos__logo{
+        width: 40px;
+    }
+
+    .main__mostrar__datos__imag{
+        display: none;
+        justify-content: center;
+        padding: 6%;
+    }
+
+    .main__mostrar__datos{
+        width: auto;
+        margin: 0px 40px;
+    }
+
+    .main__intro__datos__contenedor__button{
+        justify-content: center;
+        align-items: center;
+    }
+
+   }
+
+    /*_____________________________________________ */
+    /***********RESPONSIVIDAD PARA CELULARES********* */
+    /* ____________________________________________ */
+
+    
+@MEDIA (max-width: 380px){
+    
+    .main{
+        gap: 24px;  
+        box-sizing: border-box;
+        justify-content: center;
+    }
+
+    .main__intro__datos{
+        margin: 16px;
+        width: auto;
+    }
+
+    .main__intro__datos__logo{
+       margin: 80px 16px 16px 16px;
+    }
+
+    
+    .main__mostrar__datos{
+        width: auto; 
+        margin: 16px;
+    }
+
+    .main__intro__datos__contenedor__button{
+        flex-direction: column;
+    }
+
+    
+   }
+
