@@ -35,6 +35,7 @@ html,body{
 .main__intro__datos__input{
     width: 90%;
     height: 48px;
+    max-height: 50%;
     font-size: 2rem; 
     border: none;
     color: #0A3871;
@@ -89,6 +90,7 @@ html,body{
     flex-direction: column;
     gap: 16px;
     margin: 32px;
+    box-sizing: border-box;
 }
 
 .main__mostrar__datos__titulo{

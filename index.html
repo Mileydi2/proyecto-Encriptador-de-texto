@@ -25,21 +25,25 @@
      <main class="main">
          <img src="Vector.png" alt="imagen de logo de alura" class="main__intro__datos__logo">
          
-         <section class="main__intro__datos">                
-            <input type="text" class="main__intro__datos__input" placeholder="Ingrese el texto aqui">
-            
+         <section class="main__intro__datos">   
+            <textarea name="" id="multiline-input" type="text" class="main__intro__datos__input txtInput" placeholder="Ingrese el texto aqui"></textarea>                    
+
+            <!--  <input type="text" class="main__intro__datos__input txtInput" placeholder="Ingrese el texto aqui"> -->            
+
             <section class="main__intro__datos__contenedor__icono__button">
                 <label for="" class="main__intro__datos__icono">  <i class="fa-solid fa-circle-exclamation"></i> Solo letras minusculas y sin acentos </label>
                 <section class="main__intro__datos__contenedor__button">
-                    <button class="main__intro__datos__button Encriptador">Encriptar</button>
-                    <button class="main__intro__datos__button Desencriptar"> Desencriptar </button>
+                    <button class="main__intro__datos__button Encriptador" onclick="clickEncriptar ()">Encriptar</button>
+                    <button class="main__intro__datos__button Desencriptar" onclick="clickDesencriptar ()"> Desencriptar </button>
                 </section>
             </section>
          </section>
          
          <section class="main__mostrar__datos">
+            <section>
                 <img src="Muñeco.png" alt="muñeco descubriendo cosas" class="main__mostrar__datos__imag">
-            
+            </section>
+
             <section class="main__mostrar__datos__section">
                 <h3 class="main__mostrar__datos__titulo">Ningun mensaje fue encontrado</h3>
                 <p class="main__mostrar__datos__parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
