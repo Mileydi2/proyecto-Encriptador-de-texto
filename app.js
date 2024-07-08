@@ -106,7 +106,6 @@ function incrustarTextoParaMostrar(texto){
         buttonCopiarParaMostrar.innerHTML = "Copiar";
     }else{
         document.querySelector("p").innerHTML=texto;
-        document.querySelector("button").innerHTML="";
     }
 
     darEstiloEtiquetasCreadas(parrafoTextoParaMostrar, buttonCopiarParaMostrar, contenedorMostrarDatos, contenedorTextoParaMostrar );
@@ -188,7 +187,7 @@ function copiarTexto(boton){
                // Opcional: Restablece el estilo del botón después de unos segundos
                boton.innerHTML="Copiado";
                boton.style="width: 100% ; height: 67px ; padding: 24px ;border: 1px solid #0A3871 ;"+
-                "border-radius: 24px ; color: #0A3871 ; background-color: color: #e8c9e3;";
+                "border-radius: 24px ; color: #0A3871 ; background-color: color: #ddb4e6;";
                setTimeout(() => {
                    boton.innerHTML = "Copiar";
                    boton.style="width: 100% ; height: 67px ; padding: 24px ;border: 1px solid #0A3871 ;"+
